@@ -67,6 +67,7 @@ return require('packer').startup(function()
           noft = '没得 ft',
         },
       }
+      vim.g.bubbly_tabline = 0
     end
     }
       -- treesitter
