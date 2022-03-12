@@ -6,6 +6,8 @@ require("init-bufferline")
 require("init-highlight")
 require("lsp/setup")
 require ("lsp/init-cmp")
+require("init-nvimgps")
+require("init-statusline")
 -- 行号
 vim.o.number = true
 -- 4空格一个tab

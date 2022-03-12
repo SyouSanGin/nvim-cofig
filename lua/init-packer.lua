@@ -21,55 +21,71 @@ return require('packer').startup(function()
       'yamatsum/nvim-nonicons',
       requires = {'kyazdani42/nvim-web-devicons'}
     }
+    
+  -- nvim gps 显示代码层级
 
+    use {
+      "SmiteshP/nvim-gps",
+      requires = "nvim-treesitter/nvim-treesitter"
+    }
     --status line
 
-    use {'datwaft/bubbly.nvim', config = function()
-      -- Here you can add the configuration for the plugin
-      vim.g.bubbly_palette = {
-        background = "#34343c",
-        foreground = "#c5cdd9",
-        black = "#3e4249",
-        red = "#ec7279",
-        green = "#a0c980",
-        yellow = "#deb974",
-        blue = "#6cb6eb",
-        purple = "#d38aea",
-        cyan = "#5dbbc1",
-        white = "#c5cdd9",
-        lightgrey = "#57595e",
-        darkgrey = "#404247",
-      }
-      vim.g.bubbly_statusline = {
-        'mode',
-        'truncate',
-        'path',
-        'signify',
-        'divisor',
-        'filetype',
-        'progress'
-      }
-      vim.g.bubbly_tags = {
-        default = 'CKK 大好き❣',
-      
-        mode = {
-          normal = '普普通通',
-          insert = '开肝！',
-          visual = '给我选！',
-          visualblock = '给我按框选',
-          command = '快来命令我叭主人~❤️',
-          terminal = '写下你想让PC酱做的事',
-          replace = '当面NTR',
-          default = 'CKK 大好き❣',
-        },
-        paste = '贴贴~💕',
-        filetype = {
-          noft = '没得 ft',
-        },
-      }
-      vim.g.bubbly_tabline = 0
-    end
+    --[[use {'datwaft/bubbly.nvim',config = function()
+      local gps = require("nvim-gps")
+        -- Here you can add the configuration for the plugin
+        vim.g.bubbly_palette = {
+          background = "#34343c",
+          foreground = "#c5cdd9",
+          black = "#3e4249",
+          red = "#ec7279",
+          green = "#a0c980",
+          yellow = "#deb974",
+          blue = "#6cb6eb",
+          purple = "#d38aea",
+          cyan = "#5dbbc1",
+          white = "#c5cdd9",
+          lightgrey = "#57595e",
+          darkgrey = "#404247",
+        }
+        vim.g.bubbly_statusline = {
+          'mode',
+          'truncate',
+          'path',
+          'signify',
+          'divisor',
+          'filetype',
+          'progress'
+        }
+        vim.g.bubbly_tags = {
+          default = 'CKK 大好き❣',   
+        
+          mode = {
+            normal = '普普通通',
+            insert = '开肝！',
+            visual = '给我选！',
+            visualblock = '给我按框选',
+            command = '快来命令我叭主人~❤️',
+            terminal = '写下你想让PC酱做的事',
+            replace = '当面NTR',
+            default = 'CKK 大好き❣',
+          },
+          paste = '贴贴~💕',
+          filetype = {
+            noft = '没得 ft',
+          },
+        }
+        vim.g.bubbly_tabline = 0
+      end
     }
+--]]
+
+use {
+  'glepnir/galaxyline.nvim',
+    branch = 'main',
+    -- some optional icons
+    requires = {'kyazdani42/nvim-web-devicons', opt = true}
+}
+
       -- treesitter
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
@@ -90,10 +106,6 @@ return require('packer').startup(function()
   -- lspkind
   use 'onsails/lspkind-nvim'
 
-  -- nvim gps 显示代码层级
-use {
-	"SmiteshP/nvim-gps",
-	requires = "nvim-treesitter/nvim-treesitter"
-}
+
 
 end)
