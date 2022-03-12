@@ -70,7 +70,7 @@ time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["bubbly.nvim"] = {
-    config = { '\27LJ\2\n�\5\0\0\3\0\r\0\0216\0\0\0009\0\1\0005\1\3\0=\1\2\0006\0\0\0009\0\1\0005\1\5\0=\1\4\0006\0\0\0009\0\1\0005\1\a\0005\2\b\0=\2\t\0015\2\n\0=\2\v\1=\1\6\0006\0\0\0009\0\1\0)\1\0\0=\1\f\0K\0\1\0\19bubbly_tabline\rfiletype\1\0\1\tnoft\14没得 ft\tmode\1\0\b\vnormal\17普普通通\rterminal"写下你想让PC酱做的事\vinsert\14开肝！\fcommand$快来命令我叭主人~❤️\freplace\14当面NTR\16visualblock\20给我按框选\fdefault\21CKK 大好き❣\vvisual\17给我选！\1\0\2\fdefault\21CKK 大好き❣\npaste\16贴贴~💕\16bubbly_tags\1\b\0\0\tmode\rtruncate\tpath\fsignify\fdivisor\rfiletype\rprogress\22bubbly_statusline\1\0\f\ngreen\f#a0c980\15background\f#34343c\bred\f#ec7279\rdarkgrey\f#404247\nblack\f#3e4249\14lightgrey\f#57595e\15foreground\f#c5cdd9\nwhite\f#c5cdd9\tcyan\f#5dbbc1\vpurple\f#d38aea\tblue\f#6cb6eb\vyellow\f#deb974\19bubbly_palette\6g\bvim\0' },
+    config = { '\27LJ\2\n�\5\0\0\3\0\r\0\0216\0\0\0009\0\1\0005\1\3\0=\1\2\0006\0\0\0009\0\1\0005\1\5\0=\1\4\0006\0\0\0009\0\1\0005\1\a\0005\2\b\0=\2\t\0015\2\n\0=\2\v\1=\1\6\0006\0\0\0009\0\1\0)\1\0\0=\1\f\0K\0\1\0\19bubbly_tabline\rfiletype\1\0\1\tnoft\14没得 ft\tmode\1\0\b\fcommand$快来命令我叭主人~❤️\16visualblock\20给我按框选\freplace\14当面NTR\vvisual\17给我选！\fdefault\21CKK 大好き❣\rterminal"写下你想让PC酱做的事\vnormal\17普普通通\vinsert\14开肝！\1\0\2\npaste\16贴贴~💕\fdefault\21CKK 大好き❣\16bubbly_tags\1\b\0\0\tmode\rtruncate\tpath\fsignify\fdivisor\rfiletype\rprogress\22bubbly_statusline\1\0\f\tblue\f#6cb6eb\nwhite\f#c5cdd9\vyellow\f#deb974\15background\f#34343c\ngreen\f#a0c980\bred\f#ec7279\rdarkgrey\f#404247\nblack\f#3e4249\14lightgrey\f#57595e\15foreground\f#c5cdd9\tcyan\f#5dbbc1\vpurple\f#d38aea\19bubbly_palette\6g\bvim\0' },
     loaded = true,
     path = "C:\\Users\\SyouSanGin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\bubbly.nvim",
     url = "https://github.com/datwaft/bubbly.nvim"
@@ -119,6 +119,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\SyouSanGin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-gps"] = {
+    loaded = true,
+    path = "C:\\Users\\SyouSanGin\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-gps",
+    url = "https://github.com/SmiteshP/nvim-gps"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,
@@ -170,7 +175,7 @@ _G.packer_plugins = {
 time([[Defining packer_plugins]], false)
 -- Config for: bubbly.nvim
 time([[Config for bubbly.nvim]], true)
-try_loadstring('\27LJ\2\n�\5\0\0\3\0\r\0\0216\0\0\0009\0\1\0005\1\3\0=\1\2\0006\0\0\0009\0\1\0005\1\5\0=\1\4\0006\0\0\0009\0\1\0005\1\a\0005\2\b\0=\2\t\0015\2\n\0=\2\v\1=\1\6\0006\0\0\0009\0\1\0)\1\0\0=\1\f\0K\0\1\0\19bubbly_tabline\rfiletype\1\0\1\tnoft\14没得 ft\tmode\1\0\b\vnormal\17普普通通\rterminal"写下你想让PC酱做的事\vinsert\14开肝！\fcommand$快来命令我叭主人~❤️\freplace\14当面NTR\16visualblock\20给我按框选\fdefault\21CKK 大好き❣\vvisual\17给我选！\1\0\2\fdefault\21CKK 大好き❣\npaste\16贴贴~💕\16bubbly_tags\1\b\0\0\tmode\rtruncate\tpath\fsignify\fdivisor\rfiletype\rprogress\22bubbly_statusline\1\0\f\ngreen\f#a0c980\15background\f#34343c\bred\f#ec7279\rdarkgrey\f#404247\nblack\f#3e4249\14lightgrey\f#57595e\15foreground\f#c5cdd9\nwhite\f#c5cdd9\tcyan\f#5dbbc1\vpurple\f#d38aea\tblue\f#6cb6eb\vyellow\f#deb974\19bubbly_palette\6g\bvim\0', "config", "bubbly.nvim")
+try_loadstring('\27LJ\2\n�\5\0\0\3\0\r\0\0216\0\0\0009\0\1\0005\1\3\0=\1\2\0006\0\0\0009\0\1\0005\1\5\0=\1\4\0006\0\0\0009\0\1\0005\1\a\0005\2\b\0=\2\t\0015\2\n\0=\2\v\1=\1\6\0006\0\0\0009\0\1\0)\1\0\0=\1\f\0K\0\1\0\19bubbly_tabline\rfiletype\1\0\1\tnoft\14没得 ft\tmode\1\0\b\fcommand$快来命令我叭主人~❤️\16visualblock\20给我按框选\freplace\14当面NTR\vvisual\17给我选！\fdefault\21CKK 大好き❣\rterminal"写下你想让PC酱做的事\vnormal\17普普通通\vinsert\14开肝！\1\0\2\npaste\16贴贴~💕\fdefault\21CKK 大好き❣\16bubbly_tags\1\b\0\0\tmode\rtruncate\tpath\fsignify\fdivisor\rfiletype\rprogress\22bubbly_statusline\1\0\f\tblue\f#6cb6eb\nwhite\f#c5cdd9\vyellow\f#deb974\15background\f#34343c\ngreen\f#a0c980\bred\f#ec7279\rdarkgrey\f#404247\nblack\f#3e4249\14lightgrey\f#57595e\15foreground\f#c5cdd9\tcyan\f#5dbbc1\vpurple\f#d38aea\19bubbly_palette\6g\bvim\0', "config", "bubbly.nvim")
 time([[Config for bubbly.nvim]], false)
 if should_profile then save_profiles() end
 

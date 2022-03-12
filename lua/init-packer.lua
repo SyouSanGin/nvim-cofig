@@ -90,4 +90,10 @@ return require('packer').startup(function()
   -- lspkind
   use 'onsails/lspkind-nvim'
 
+  -- nvim gps 显示代码层级
+use {
+	"SmiteshP/nvim-gps",
+	requires = "nvim-treesitter/nvim-treesitter"
+}
+
 end)
