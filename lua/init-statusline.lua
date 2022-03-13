@@ -14,16 +14,52 @@ gls.left[2] = {
   ViMode = {
     provider = function()
       -- auto change color according the vim mode
-      local mode_color = {n = colors.red, i = colors.green,v=colors.blue,
-                          [''] = colors.blue,V=colors.blue,
-                          c = colors.magenta,no = colors.red,s = colors.orange,
-                          S=colors.orange,[''] = colors.orange,
-                          ic = colors.yellow,R = colors.violet,Rv = colors.violet,
-                          cv = colors.red,ce=colors.red, r = colors.cyan,
-                          rm = colors.cyan, ['r?'] = colors.cyan,
-                          ['!']  = colors.red,t = colors.red}
+      local mode_color = {
+        n = colors.red,
+      i = colors.green,
+      v = colors.blue,
+      [""] = colors.blue,
+      V = colors.blue,
+      c = colors.magenta,
+      no = colors.red,
+      s = colors.orange,
+      S = colors.orange,
+      [""] = colors.orange,
+      ic = colors.yellow,
+      R = colors.violet,
+      Rv = colors.violet,
+      cv = colors.red,
+      ce = colors.red,
+      r = colors.cyan,
+      rm = colors.cyan,
+      ["r?"] = colors.cyan,
+      ["!"] = colors.red,
+      t = colors.red,}
       vim.api.nvim_command('hi GalaxyViMode guifg='..mode_color[vim.fn.mode()])
-      return "ご主人様~ 💕"
+      local mode_name_mapping = {
+        n = "ご主人様~ 💕",
+        i = "肝帝再现🤤",
+        v = "左顾右盼👀",
+        [""] = "矩阵变换🥵",
+        V = "行向量欸🥳",
+        c = "命令我吧ご主人様~ 💕",
+        no = "接下来做什么🤔",
+        s = "Pick了字符😨",
+        S = "Pick了句子😱",
+        [""] = "Pick了块😵",
+        ic = "insert cmp😶",
+        R = "这就不要我了么😭",
+        Rv = "Vreplace(用不着😆)",
+        cv = "Ex咖喱棒🗡️",
+        ce = "晓不得😒",
+        r = "按键继续😙",
+        rm = "もっともっと🤩",
+        ["r?"] = "确认？🤨",
+        ["!"] = "你的命令NTR了VIM😍",
+        t = "T-800🤖",
+      }
+
+      return mode_name_mapping[vim.fn.mode()] or "QAQ😴"
     end,
     highlight = {colors.red,colors.bg,'bold'},
   },
