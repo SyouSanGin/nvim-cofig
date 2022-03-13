@@ -106,6 +106,13 @@ use {
   -- lspkind
   use 'onsails/lspkind-nvim'
 
+    -- fuzzy search
+    use {
+  'nvim-telescope/telescope.nvim',
+  requires = { {'nvim-lua/plenary.nvim'} }
+}
+    use 'glepnir/dashboard-nvim'
+
 
 
 end)

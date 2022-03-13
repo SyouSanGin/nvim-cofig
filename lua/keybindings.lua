@@ -94,7 +94,7 @@ pluginKeys.cmp = function(cmp)
     ['<C-k>'] = cmp.mapping.select_prev_item(),
     -- 下一个
     ['<C-j>'] = cmp.mapping.select_next_item(),
-    -- 出现补全
+    -- 出现补全'glepnir/dashboard-nvim'
     ['<A-.>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
     -- 取消
     ['<A-,>'] = cmp.mapping({
@@ -114,4 +114,19 @@ pluginKeys.cmp = function(cmp)
   }
 end
 
+-- telescope
+map('n','<leader>ff',"<cmd>lua require('telescope.builtin').find_files()<CR>",opt)
+map('n','<leader>fg',"<cmd>lua require('telescope.builtin').live_grep()<CR>",opt)
+map('n','<leader>fb',"<cmd>lua require('telescope.builtin').buffers()<CR>",opt)
+map('n','<leader>fh',"<cmd>lua require('telescope.builtin').help_tags()<CR>",opt)
+map ('n','<leader>fo',"<cmd> lua require('telescope.builtin').oldfiles()<CR>",opt)
+map ('n','<leader>fm',"<cmd>bookmark<CR>",opt)
+
+--dashboard
+map ('n','<leader>ss',"<cmd>SessionSave<CR>",opt)
+
+map ('n','<leader>sl',"<cmd>SessionLoad<CR>",opt)
+
 return pluginKeys
+
+
