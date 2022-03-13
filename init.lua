@@ -56,3 +56,5 @@ vim.o.splitright = true
 vim.o.list = true
 vim.o.listchars = "space:·"
 
+-- 不使用自带的回显
+vim.o.showmode = false
