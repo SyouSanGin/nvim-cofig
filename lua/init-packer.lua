@@ -22,14 +22,12 @@ return require('packer').startup(function()
       requires = {'kyazdani42/nvim-web-devicons'}
     }
     
-  -- nvim gps 显示代码层级
-
+  -- nvim gps 显示代码层级 暂时不使用
     use {
       "SmiteshP/nvim-gps",
       requires = "nvim-treesitter/nvim-treesitter"
     }
     --status line
-
     --[[use {'datwaft/bubbly.nvim',config = function()
       local gps = require("nvim-gps")
         -- Here you can add the configuration for the plugin
@@ -113,6 +111,8 @@ use {
 }
     use 'glepnir/dashboard-nvim'
 
-
-
+-- debug
+--    use 'mfussenegger/nvim-dap'
+--    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"}}
+     use   'sakhnik/nvim-gdb'
 end)

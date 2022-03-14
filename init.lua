@@ -6,10 +6,11 @@ require("init-bufferline")
 require("init-highlight")
 require("lsp/setup")
 require ("lsp/init-cmp")
-require("init-nvimgps")
+require("init-nvimgps") -- 不使用，不好用
 require("init-statusline")
 require("init-telescope")
 require("init-dashboard")
+require("init-debug")
 -- 行号
 vim.o.number = true
 -- 4空格一个tab

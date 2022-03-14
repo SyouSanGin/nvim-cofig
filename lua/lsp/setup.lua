@@ -34,7 +34,6 @@ lsp_installer.on_server_ready(function(server)
                 print("Binding ...")
                 require('keybindings').maplsp(buf_set_keymap)
               end
-            print (opts)
             server:setup(opts)
         end
   end

@@ -246,7 +246,7 @@ gls.short_line_right[1] = {
 }
 
 -- Lua
-local gps = require("nvim-gps")
+--[[local gps = require("nvim-gps")
 
 require('galaxyline').section.mid[1]= {
 	nvimGPS = {
@@ -258,3 +258,4 @@ require('galaxyline').section.mid[1]= {
 		end
 	}
 }
+--]]
